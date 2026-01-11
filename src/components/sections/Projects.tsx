@@ -30,7 +30,6 @@ const projects: Project[] = [
     icon: <Award className="h-6 w-6" />,
     tags: ["MATLAB", "FDTD Simulations", "Research", "Lab Safety", "Schlenk Line"],
     link: "/Sohum_Research_Presentation.pdf",
-    isDownload: true,
     highlight: "Johns Hopkins University",
   },
   {
