@@ -1,5 +1,6 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -8,47 +9,60 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col justify-center items-center px-6 relative">
-      <div className="max-w-3xl text-center space-y-8 animate-fade-in">
-        <div className="space-y-4">
-          <p className="text-primary font-mono text-sm tracking-wide uppercase">
-            Student • Researcher • Builder
-          </p>
-          <h1 className="text-5xl md:text-7xl font-serif font-semibold text-foreground tracking-tight">
-            Sohum Sachdev
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            High school student passionate about research, engineering, and building tools that help people.
-            Currently exploring plasmonics at Johns Hopkins University.
-          </p>
-        </div>
+      <div className="max-w-3xl text-center space-y-8">
+        <ScrollAnimationWrapper>
+          <div className="space-y-4">
+            <p className="text-primary font-mono text-sm tracking-wide uppercase">
+              Student • Researcher • Builder
+            </p>
+            <h1 className="text-5xl md:text-7xl font-serif font-semibold text-foreground tracking-tight">
+              Sohum Sachdev
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
+              High school student at Severn School passionate about research, engineering, and building tools that help people.
+            </p>
+          </div>
+        </ScrollAnimationWrapper>
 
-        <div className="flex items-center justify-center gap-4">
-          <a
-            href="https://github.com/sohumsachdev"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:text-primary transition-colors">
-              <Github className="h-5 w-5" />
-            </Button>
-          </a>
-          <a
-            href="https://linkedin.com/in/sohumsachdev"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:text-primary transition-colors">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-          </a>
-          <a href="mailto:sohumvedant@gmail.com" aria-label="Email">
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:text-primary transition-colors">
-              <Mail className="h-5 w-5" />
-            </Button>
-          </a>
-        </div>
+        <ScrollAnimationWrapper delay={200}>
+          <div className="flex items-center justify-center gap-4">
+            <a
+              href="https://github.com/sohumsachdev"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:text-primary transition-colors">
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
+            <a
+              href="https://linkedin.com/in/sohumsachdev"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="mailto:sohumvedant@gmail.com" aria-label="Email">
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:text-primary transition-colors">
+                <Mail className="h-5 w-5" />
+              </Button>
+            </a>
+            <a
+              href="/Sohum_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Resume"
+            >
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:text-primary transition-colors">
+                <FileText className="h-5 w-5" />
+              </Button>
+            </a>
+          </div>
+        </ScrollAnimationWrapper>
       </div>
 
       <button
