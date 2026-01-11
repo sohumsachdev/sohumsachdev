@@ -45,7 +45,7 @@ const Navbar = () => {
           }}
           className="font-serif text-xl font-semibold text-foreground hover:text-primary transition-colors"
         >
-          SS
+          S
         </a>
 
         {/* Desktop Navigation */}
