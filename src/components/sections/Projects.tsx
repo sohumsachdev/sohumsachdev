@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     title: "GPA Calculators",
     description:
-      "Built three GPA calculators for different schools. The Severn Upper School calculator has gained 738+ active users and has become an essential tool for students planning their coursework. It brought me joy knowing it helped people. The Severn School calculator is attached.",
+      "Built three GPA calculators for different schools. The Severn Upper School calculator has gained 738+ active users and has become an essential tool for students planning their coursework. It brings me joy knowing it helps people. The Severn School calculator is attached.",
     icon: <Calculator className="h-6 w-6" />,
     tags: ["HTML/CSS/JS", "Frontend", "Analytics"],
     link: "https://severngpacalc.netlify.app/",
