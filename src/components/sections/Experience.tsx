@@ -41,8 +41,8 @@ const experiences: Experience[] = [
     role: "CyberPatriot National Semi-Finalists",
     period: "2022 – Present",
     description: [
-      "Lead team to CyberPatriot national semi-finals",
-      "Organized TI Codes participation, reaching top 10 internationally",
+      "Helped lead team to CyberPatriot national semi-finals",
+      "Helped lead Cyber Team's TI Codes contest entry, reaching top 10 internationally",
       "Plan meetings and coordinate national/international competitions",
     ],
     icon: <Shield className="h-5 w-5" />,
