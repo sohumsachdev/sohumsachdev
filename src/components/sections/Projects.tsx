@@ -43,7 +43,7 @@ const projects: Project[] = [
   {
     title: "TI Codes Rover",
     description:
-      "Led Cyber Team's TI Codes contest entry. Our printer-to-classroom delivery rover was selected as one of 10 international finalists, earning funding for project completion.",
+      "Helped lead Cyber Team's TI Codes contest entry. Our printer-to-classroom delivery rover was selected as one of 10 international finalists, earning funding for project completion.",
     icon: <Cpu className="h-6 w-6" />,
     tags: ["Robotics", "Python", "Leadership"],
     highlight: "Top 10 Finalist",
